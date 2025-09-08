@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="169.604" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-09-05T15:12:14.654887Z">
+<testcase classname="End-to-End BStackDemo Shopping Flow" name="Complete shopping journey with login - #1.1" time="62.1">
+<system-out><![CDATA[
+Given User launches browser.................................................passed
+When User navigates to BStackDemo site......................................passed
+And User logs in with valid credentials.....................................passed
+And User should be logged in successfully...................................passed
+And User searches and adds first product to cart............................passed
+And Product should be visible in cart.......................................passed
+And User proceeds to checkout...............................................passed
+And Checkout page should be displayed.......................................passed
+And User enters shipping details with firstname "Nasir", lastname "G", address "23/1 knl", state "AP", and pincode "518002".passed
+And Shipping address should be saved........................................passed
+And User downloads order receipt............................................passed
+And Order receipt should be downloaded......................................passed
+And User clicks Continue shopping...........................................passed
+Then User should be redirected to shopping home page........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping flow for demouser" name="Complete shopping journey for demouser" time="39.41">
+<system-out><![CDATA[
+Given User launches the browser.............................................passed
+When User navigates to BStackDemo website...................................passed
+And User logs in with demouser..............................................passed
+And User performs shopping flow with brands:................................passed
+And User searches for "iPhone"..............................................passed
+And Apply Low to High filter................................................passed
+And Apply High to Low filter................................................passed
+And User clicks Privacy Policy Read More....................................passed
+And Privacy Policy page should open.........................................passed
+And User clicks Offers page.................................................passed
+And Offers message should be validated......................................passed
+Then User logs out..........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Image Not Loading User Validation" name="Validate login for image_not_loading_user" time="15.467">
+<system-out><![CDATA[
+Given User launches Browser.................................................passed
+When User navigates to BStackDemo Website...................................passed
+And User logs in with image_not_loading_user................................passed
+And Validate that user logged in successfully...............................passed
+Then User will log out......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Favourites User Validation" name="Validate favourites for fav_user" time="20.122">
+<system-out><![CDATA[
+Given User launches the Browser.............................................passed
+When User navigates to the BStackDemo site..................................passed
+And User logs in with fav_user..............................................passed
+And Open Favourites and see items...........................................passed
+Then User logs out of site..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Existing Orders User Validation" name="Validate existing orders for existing_orders_user" time="17.867">
+<system-out><![CDATA[
+Given User launches their browser...........................................passed
+When User navigates to the BStackDemo Website...............................passed
+And User logs in with existing_orders_user..................................passed
+And Open Orders and sees....................................................passed
+Then User logs out of the site..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Locked User Validation" name="Validate locked account message" time="14.085">
+<system-out><![CDATA[
+Given User launches their Browser...........................................passed
+When User navigates to the BStackDEMO site..................................passed
+And User logs in with locked_user...........................................passed
+Then Validate locked account message........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
