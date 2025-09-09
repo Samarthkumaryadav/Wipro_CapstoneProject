@@ -14,7 +14,7 @@ Feature: End-to-End BStackDemo Shopping Flow
 
     And User enters shipping details with firstname "<FirstName>", lastname "<LastName>", address "<Address>", state "<State>", and pincode "<Pincode>"
     And Shipping address should be saved
-    
+
     And User downloads order receipt
     And Order receipt should be downloaded
 
@@ -22,8 +22,8 @@ Feature: End-to-End BStackDemo Shopping Flow
     Then User should be redirected to shopping home page
 
     Examples:
-      | FirstName | LastName | Address      | State   | Pincode |
-      | Samarth    | Yadav        | Khargone   | Madhya pradesh    | 451001  |
-      
-
-    
+      | FirstName | LastName   | Address     | State             | Pincode |
+      | Samarth   | Yadav      | Khargone    | Madhya Pradesh    | 451001  |
+      | Aditi     | Sharma     | Indore      | Madhya Pradesh    | 452001  |
+      | Rahul     | Verma      | Bhopal      | Madhya Pradesh    | 462001  |
+      | Priya     | Singh      | Mumbai      | Maharashtra       | 400001  |
